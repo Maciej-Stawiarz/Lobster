@@ -6,6 +6,10 @@ import ms.lobster.fishes.models.entities.Fish;
 public final class FishMapper {
 
 	public static Fish toEntity(FishDTO dto) {
+		if (dto == null) {
+			return new Fish();
+		}
+		
 		return Fish.builder()
 				.id(dto.getId())
 				.name(dto.getName())
@@ -17,6 +21,10 @@ public final class FishMapper {
 	}
 	
 	public static FishDTO toDTO(Fish entity) {
+		if (entity == null) {
+			return new FishDTO();
+		}
+		
 		return FishDTO.builder()
 				.id(entity.getId())
 				.name(entity.getName())
