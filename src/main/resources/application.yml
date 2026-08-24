@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: lobster
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  cache:
+    type: redis

@@ -9,5 +9,4 @@ class LobsterApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
